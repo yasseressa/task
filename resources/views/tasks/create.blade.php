@@ -4,7 +4,7 @@
     <div class="row justify-content-center mt-4">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center">Create Employee</div>
+                <div class="card-header text-center">Create Task</div>
                 <div class="card-body">
                     <form method="POST" action="{{route('tasks.store')}}">
                         @csrf

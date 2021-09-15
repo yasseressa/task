@@ -35,17 +35,17 @@ class TasksController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-public function store(Request $request)
-{
-    $taskData = $request->validate([
+    public function store(Request $request)
+    {
+        $taskData = $request->validate([
         'task_name' => 'required',
         'engineer_name' => 'required',
         'period' => 'required'
-    ]);
+        ]);
 
-    Employee::create($taskData);
-    return redirect('tasks')->with('success', 'Task create successfully.');
-}
+        Tasks::create($taskData);
+        return redirect('tasks')->with('success', 'Task create successfully.');
+    }
 
     /**
      * Display the specified resource.
@@ -66,7 +66,7 @@ public function store(Request $request)
      */
     public function edit($id)
     {
-        $task = Employee::findOrFail($id);
+        $task = Tasks::findOrFail($id);
 
         return view('tasks.edit', compact('task'));
     }
