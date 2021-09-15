@@ -16,7 +16,7 @@
                     <td>ID</td>
                     <td>Task Name</td>
                     <td>Engineer Name</td>
-                    <td>Period</td>
+                    <td>Period (days)</td>
                     <td colspan="2">Actions</td>
                 </tr>
                 </thead>

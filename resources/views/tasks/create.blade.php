@@ -12,7 +12,7 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Task Name</label>
                             <div class="col-md-6">
-                                <input id="tname" type="text" class="form-control @error('task_name') is-invalid @enderror" name="tname" value="{{ old('task_name') }}">
+                                <input id="task_name" type="text" class="form-control @error('task_name') is-invalid @enderror" name="task_name" value="{{ old('task_name') }}">
 
                                 @error('task_name')
                                 <span class="invalid-feedback" role="alert">
@@ -25,7 +25,7 @@
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">Engineer Name</label>
                             <div class="col-md-6">
-                                <input id="eng" type="text" class="form-control @error('engineer_name') is-invalid @enderror" name="eng" value="{{ old('engineer_name') }}">
+                                <input id="engineer_name" type="text" class="form-control @error('engineer_name') is-invalid @enderror" name="engineer_name" value="{{ old('engineer_name') }}">
 
                                 @error('engineer_name')
                                 <span class="invalid-feedback" role="alert">
@@ -51,7 +51,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <a href="{{route('tasks.index')}}" class="btn btn-outline-dark">
-                                    Cancle
+                                    Cancel
                                 </a>
                                 <button type="submit" class="btn btn-primary">
                                     Submit
